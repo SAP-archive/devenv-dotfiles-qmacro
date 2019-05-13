@@ -3,6 +3,12 @@ export PS1="\u@\h:\w \n=> "
 export PATH=~/local/bin:~/local/scripts:$JAVA_HOME/bin:$PATH
 export EDITOR=vim
 
+# Load the shell dotfiles
+for file in ~/.{path,exports,aliases}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 
 # Colourise the ls output, need to use different
 # parameters depending on platform (macOS doesn't
