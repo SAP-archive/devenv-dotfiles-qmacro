@@ -13,7 +13,9 @@ The dotfiles here have been developed on macOS, which is what you'll need to use
 To install, clone this repository. I suggest cloning it to `.dotfiles` in your home directory, which is where I keep mine. Once you've done this, run the bootstrap script, which you should also run whenever you wish to bring in any updates.
 
 ```bash
-git clone https://github.com/SAP-samples/devenv-dotfiles-qmacro ~/.dotfiles && cd ~/.dotfiles && source bootstrap.sh
+git clone https://github.com/SAP-samples/devenv-dotfiles-qmacro ~/.dotfiles \
+&& cd ~/.dotfiles \
+&& source ./bootstrap.sh
 ```
 
 ## How to obtain support
