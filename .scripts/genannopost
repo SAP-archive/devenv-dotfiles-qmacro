@@ -1,0 +1,9 @@
+#/bin/bash
+
+# Generates HTML source for an annotation blog post on (for the SAP Community)
+# based on Markdown content in the sharednotes/livestream_annotations directory.
+
+EPISODE=$1
+SOURCE=${LP}/sharednotes/livestream_annotations
+
+pandoc --from=markdown --to=html ${SOURCE}/episode-${EPISODE}.md

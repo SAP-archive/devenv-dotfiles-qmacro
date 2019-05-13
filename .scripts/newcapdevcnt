@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Set up new directory for CAP development in a container
+# using VS Code Remote Development feature. This copies a
+# devcontainer definition that is defined for this purpose.
+
+SOURCE=$LP/devcontainer-cap-dev
+TARGET=$1
+
+cp -a ${SOURCE} ${TARGET}
+$CODE ${TARGET}
+

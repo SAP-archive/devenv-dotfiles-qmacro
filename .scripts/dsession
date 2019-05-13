@@ -1,0 +1,6 @@
+#/bin/bash
+
+# Starts up a temporary and throwaway Docker instance. This particular
+# one is an image built with Node.js CAP dev in mind.
+
+docker run -i -t -p 4004:4004 cap
