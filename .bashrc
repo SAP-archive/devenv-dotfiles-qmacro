@@ -58,5 +58,7 @@ export PATH=$(du $HOME/.scripts | cut -f2 | tr '\n' ':'):$PATH
 
 # Use "code" to invoke "code-insiders" if present, otherwise "code"
 CI=`which code-insiders`
-export CODE=${CI:-`which code`}
+alias code=${CI:-`which code`}
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
