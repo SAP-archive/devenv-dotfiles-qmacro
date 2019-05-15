@@ -10,7 +10,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-surround'
@@ -97,3 +98,6 @@ nnoremap <silent> <leader>fr :ALEFindReferences<cr>
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+
+" Bind Ctrl-P to use fzf 'Files' command now
+nnoremap <c-p> :Files<cr>
