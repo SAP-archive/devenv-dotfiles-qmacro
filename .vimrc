@@ -26,7 +26,7 @@ syntax on
 filetype plugin indent on
 
 set background=dark
-colorscheme elflord
+colorscheme default
 set encoding=utf-8
 set ts=4
 set shiftwidth=4
@@ -101,3 +101,6 @@ let g:limelight_conceal_ctermfg = 240
 
 " Bind Ctrl-P to use fzf 'Files' command now
 nnoremap <c-p> :Files<cr>
+
+" Improve search UI
+set hlsearch incsearch
