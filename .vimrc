@@ -17,6 +17,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
+Plug 'morhetz/gruvbox'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -26,7 +27,7 @@ syntax on
 filetype plugin indent on
 
 set background=dark
-colorscheme default
+colorscheme gruvbox
 set encoding=utf-8
 set ts=4
 set shiftwidth=4
