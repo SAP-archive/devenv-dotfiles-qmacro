@@ -105,3 +105,4 @@ nnoremap <c-p> :Files<cr>
 
 " Improve search UI
 set hlsearch incsearch
+nnoremap <leader>h :set hls!<cr>
