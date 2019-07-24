@@ -1,8 +1,9 @@
 #!/bin/bash
 
-
 templatedir=${LP}/project-templates
 
+# np - new project (from template)
+# Sets up a new project dir from a tar / gzipped project template
 function np() {
 
 	# Find all dirs in template dir and offer choice via fzf
@@ -39,4 +40,23 @@ function np() {
 
 	ls
 
+}
+
+hsod_episode_topic_file=$HOME/Streaming/episodetopic.txt
+hsod_episode_root_dir=$LP/livestream
+
+# cdep - change dir to the current HandsOnSAPDev episode directory. If it doesn't
+# already exist, create it too.
+function cdep() {
+	hsod_episode_current=$(
+		head -1 ${hsod_episode_topic_file} | \
+		cut -d ' ' -f 1 | \
+		tr '[:upper:]' '[:lower:]' \
+	)
+	hsod_episode_dir="${hsod_episode_root_dir}/${hsod_episode_current}"
+	if [ ! -d "${hsod_episode_dir}" ]; then
+		mkdir "${hsod_episode_dir}"
+	fi
+
+	cd ${hsod_episode_dir}
 }
