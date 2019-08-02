@@ -1,4 +1,0 @@
-#!/bin/bash
-
-npm set @sap:registry=https://npm.sap.com
-echo "SAP NPM registry now external"

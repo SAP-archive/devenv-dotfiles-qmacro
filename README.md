@@ -2,7 +2,7 @@
 
 ## Installation
 
-This repository contains configuration and customisation settings for DJ Adams's workspace, following the [dotfiles](https://dotfiles.github.io/) philosophy and practice. The structure and approach is based on [Mathias Bynens's dotfiles repository](https://github.com/mathiasbynens/dotfiles).
+This repository contains configuration and customisation settings for DJ Adams's workspace, following the [dotfiles](https://dotfiles.github.io/) philosophy and practice.
 
 ## Requirements
 
@@ -10,12 +10,10 @@ The dotfiles here have been developed on macOS, which is what you'll need to use
 
 ## Download and installation
 
-To install, clone this repository. I suggest cloning it to `.dotfiles` in your home directory, which is where I keep mine. Once you've done this, run the bootstrap script, which you should also run whenever you wish to bring in any updates.
+To install, clone this repository. I suggest cloning it to your home directory, which is where I keep mine. Be careful not to clobber anything you already have there.
 
 ```bash
-git clone https://github.com/SAP-samples/devenv-dotfiles-qmacro ~/.dotfiles \
-&& cd ~/.dotfiles \
-&& source ./bootstrap.sh
+git clone https://github.com/SAP-samples/devenv-dotfiles-qmacro ~/
 ```
 
 ## How to obtain support

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Remove docker images in exited status
-docker rm $(docker ps -q -a -f status=exited)
-
