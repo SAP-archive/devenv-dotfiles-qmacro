@@ -13,7 +13,9 @@ The dotfiles here have been developed on macOS, which is what you'll need to use
 To install, clone this repository. I suggest cloning it to your home directory, which is where I keep mine. Be careful not to clobber anything you already have there.
 
 ```bash
-git clone https://github.com/SAP-samples/devenv-dotfiles-qmacro ~/
+git clone --bare https://github.com/SAP-samples/devenv-dotfiles-qmacro .git
+git config --unset core.bare
+git reset
 ```
 
 ## How to obtain support
