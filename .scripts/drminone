@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Remove images named "<none>" which will probably be experimental / aborted.
+docker rmi `docker images | grep '<none>' | awk '{print $3}'`

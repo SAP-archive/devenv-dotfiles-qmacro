@@ -1,0 +1,4 @@
+#!/bin/bash
+
+netstat -atn | grep LISTEN
+

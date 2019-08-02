@@ -1,0 +1,4 @@
+#!/bin/bash
+
+npm set @sap:registry=http://nexus.wdf.sap.corp:8081/nexus/content/groups/build.snapshots.npm
+echo "SAP NPM registry now internal"

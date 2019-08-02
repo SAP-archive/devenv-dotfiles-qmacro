@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Go to where the docu is stored
+cd $LP/wdf/cap.github.wdf.sap.corp
+
+# First, try to update the docu
+ping -c 1 github.wdf.sap.corp > /dev/null 2>&1 && git pull --quiet && echo "Updated docu"
+
+# Now start the server
+npm start

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+target=$1
+shotsource=/tmp/Screenshot
+filecount=`ls -1 ${shotsource}* | wc -l`
+
+# Abort if there's more than one screenshot file
+if (($filecount > 1)); then
+	echo "More than one screenshot - aborting."
+	exit 1
+fi
+
+# ov
+mv ${shotsource}* ${target}.png

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SESSION=capdev
+PROJDIR=/tmp/bookshop
+
+tmux has-session -t $SESSION
+if [ $? != 0 ]
+then
+	tmux new-session -s $SESSION -n editor -d
+	tmux send-keys -t $SESSION cd ' ' ${PROJDIR} C-m
+	tmux send-keys -t $SESSION vim C-m
+	tmux split-window -h -t $SESSION
+	tmux send-keys -t ${SESSION}:1.2 cd ' ' ${PROJDIR} C-m
+	tmux send-keys -t ${SESSION}:1.2 'npx nodemon -e cds,js -w db -w srv -x "cds run"' C-m
+	tmux select-pane -t ${SESSION}:1.1
+	tmux send-keys -t ${SESSION}:1.1 C-p
+fi
+tmux attach -t $SESSION
+

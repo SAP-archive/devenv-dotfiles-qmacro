@@ -1,0 +1,13 @@
+#!/bin/bash
+
+nodeinfo=$(node -v)
+
+cds=$(cds -v 2>/dev/null)
+cdsinfo="Pending..."
+if [ -z "$cds" ]; then
+	cdsinfo="Not installed globally"
+else
+	cdsinfo=$(echo "$cds" | grep '@sap/cds:' | awk '{print $2}')
+fi
+
+echo "Node: $nodeinfo | CDS: $cdsinfo"
