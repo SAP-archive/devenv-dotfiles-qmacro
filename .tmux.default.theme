@@ -1,0 +1,34 @@
+# Default theme
+
+# default statusbar colors
+set-option -g status-bg colour237
+set-option -g status-fg white
+#set-option -g status-attr default
+
+# default window title colors
+set-window-option -g window-status-bg colour240
+set-window-option -g window-status-fg white
+
+# active window title colors
+set-window-option -g window-status-current-fg colour220
+set-window-option -g window-status-current-bg colour0
+set-window-option -g window-status-current-attr bright
+
+# pane border
+set-option -g pane-border-fg colour240
+set-option -g pane-active-border-fg colour1
+
+# message text
+set-option -g message-bg colour1
+set-option -g message-fg colour255
+
+# pane number display
+set-option -g display-panes-active-colour blue #blue
+set-option -g display-panes-colour brightred #orange
+
+# clock
+#set-window-option -g clock-mode-colour green #green
+
+set -g status-left " "
+# set -g status-right "#[fg=colour220,bold]#h#[fg=default,nobold] #[fg=colour255](#S) #[fg=colour202]%H:%M "
+set -g status-right "#[bg=#282a36,fg=#6272a4,bold]#[bg=#6272a4,fg=#f8f8f2] #S "
