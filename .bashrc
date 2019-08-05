@@ -80,4 +80,10 @@ shopt -s histappend
 # Source my functions in the scripts dir
 source ~/.scripts/functions.bash
 
+# Don't exit on Ctrl-D
+set -o ignoreeof
 
+# Automatically start or attach to a core tmux session
+if [ "$TERM" != "screen-256color" ]; then
+	tmux attach -t "$USER" || tmux new -s "$USER"
+fi
