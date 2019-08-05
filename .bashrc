@@ -87,3 +87,6 @@ set -o ignoreeof
 if [ "$TERM" != "screen-256color" ]; then
 	tmux attach -t "$USER" || tmux new -s "$USER"
 fi
+
+# Tmuxinator - source completion logic
+source $HOME/.scripts/tmuxinator.completion.bash
