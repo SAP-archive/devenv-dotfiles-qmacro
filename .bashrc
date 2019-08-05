@@ -47,9 +47,6 @@ bind -x '"\C-l": clear'
 # Set shortcuts
 [ -e "$HOME/local/scripts/bash.shortcuts" ] && source "$HOME/local/scripts/bash.shortcuts"
 
-# Experiment with fzf
-source "$HOME/local/scripts/fzfutils.sh"
-
 export LP=${HOME}/local/projects
 
 # Add all the dirs and subdirs in .scripts to the PATH.
@@ -82,3 +79,5 @@ shopt -s histappend
 
 # Source my functions in the scripts dir
 source ~/.scripts/functions.bash
+
+
