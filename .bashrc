@@ -63,7 +63,7 @@ alias code=$CODE
 
 #envinfo | lolcat 2>/dev/null
 
-export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git .'
+export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git --no-ignore .'
 
 # Get timestamps added to bash history
 export HISTTIMEFORMAT="%y-%m-%d %T "
