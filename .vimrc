@@ -23,6 +23,7 @@ Plug '$HOME/local/projects/vim-cds'
 Plug 'airblade/vim-gitgutter'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'arcticicestudio/nord-vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -32,7 +33,7 @@ syntax on
 filetype plugin indent on
 
 set background=dark
-colorscheme gruvbox
+colorscheme nord
 set encoding=utf-8
 set ts=4
 set shiftwidth=4
@@ -124,6 +125,3 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 let g:UltiSnipsEditSplit="horizontal"
 
-
-
-command FixStep %s/_\(Step.* \)_/[\1]/g
