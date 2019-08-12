@@ -77,7 +77,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Check leading whitespace
 set listchars=tab:▸·,eol:¬
-nnoremap <leader>l :set list!<cr>
+nnoremap <silent> <leader>l :set list!<cr>
 
 " Abbreviations
 iabbrev scp SAP Cloud Platform
