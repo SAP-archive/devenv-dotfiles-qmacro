@@ -85,7 +85,7 @@ set -o ignoreeof
 
 # Automatically start or attach to a core tmux session
 if [ "$TERM" != "screen-256color" ]; then
-	tmux attach -t "$USER" || tmux new -s "$USER"
+	tmux attach -t home || tmux new -s home
 fi
 
 # Tmuxinator - source completion logic
