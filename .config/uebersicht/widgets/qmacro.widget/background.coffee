@@ -5,7 +5,8 @@ render: (output) ->
 
 style: """
   background-color: rgb(43,40,40)
-  width: 99.5%;
+  width: 99%;
+  margin: auto;
   top: 3px;
   right: 2px;
   left 4px;

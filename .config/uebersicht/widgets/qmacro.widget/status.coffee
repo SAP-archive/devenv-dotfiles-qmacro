@@ -6,11 +6,11 @@ render: (output) ->
   """
 
 style: """
-  right: 55px
-  top: 5px
-  height: 13
-  color: rgb(176,161,130);
-  font-family: "Iosevka Custom", Helvetica
+  right: 30px;
+  top: 5px;
+  height: 15px;
+  color: lightgreen;
+  font-family: "Iosevka Custom", Helvetica;
   font-weight: bold;
   font-size: 18px;
   """

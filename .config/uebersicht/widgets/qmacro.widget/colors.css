@@ -11,6 +11,15 @@ table, span {
   color: #fdf6e3;
 }
 
+.active {
+	color: lightgreen;
+	font-weight: bold;
+}
+
+.inactive: {
+	color: lightgrey;
+}
+
 .background {
     background-color: #fdf6e3;
     background: #fdf6e3;

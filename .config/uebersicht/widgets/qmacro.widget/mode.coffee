@@ -9,13 +9,13 @@ render: (output) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  left: 10px
+  left: 30px
   top: 5px
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: rgb(176,161,130);
+  color: lightgreen;
   font-family: "Iosevka Custom", Helvetica;
   font-weight: bold;
   font-size: 18px;
@@ -30,6 +30,12 @@ update: (output, domEl) ->
   active = parseInt(values[1])
   total = parseInt(values[2])
 
+  displays = ""
+
+  for i in [1..total]
+	  color = if i == active then 'lightgreen' else 'lightgrey'
+	  displays = displays + "<span style='color: #{color}'>&#x246#{i - 1};</span>&nbsp;"
+
   #display the html string
-  $(domEl).find('.wmmode').html("<span class='icon'>🖥️</spa><span> #{mode} ")
+  $(domEl).find('.wmmode').html("<span class='icon'>🖥️</span><span> #{mode} #{displays}")
 
